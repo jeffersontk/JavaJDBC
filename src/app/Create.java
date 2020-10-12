@@ -3,11 +3,12 @@ package app;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.text.ParseException;
 
 import db.DB;
 
 public class Create {
- public static void main(String[] args) {
+ public static void main(String[] args) throws ParseException {
 	 //abrir conexão
 	 Connection conn = null;
 	 //prepara o statemente
@@ -40,5 +41,8 @@ public class Create {
 	 catch (SQLException e) {
 		e.printStackTrace();
 	}
+	 finally {
+			DB.closeConnection();
+		}
 }
 }

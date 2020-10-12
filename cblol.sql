@@ -27,7 +27,7 @@ CREATE TABLE `times` (
   `nome` varchar(45) DEFAULT NULL,
   `posicao` int DEFAULT NULL,
   PRIMARY KEY (`idtimes`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +36,7 @@ CREATE TABLE `times` (
 
 LOCK TABLES `times` WRITE;
 /*!40000 ALTER TABLE `times` DISABLE KEYS */;
-INSERT INTO `times` VALUES (1,'pain',1),(2,'pegasus',2);
+INSERT INTO `times` VALUES (1,'pain',1),(2,'pegasus',2),(3,'uniCarioca',4),(4,'uniCarioca',4);
 /*!40000 ALTER TABLE `times` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-10-11 17:50:33
+-- Dump completed on 2020-10-11 21:38:00
