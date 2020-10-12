@@ -1,4 +1,4 @@
-package app;
+package crud;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -27,8 +27,8 @@ public class Create {
 				 );
 //a virgula é o que será substituido por informações
 //logo esse é um codigo generico para a minha tabala só com duas colunas.
-		 	st.setString(1, "uniCarioca");
-			st.setInt(2, 4);
+		 	st.setString(1, "unisuam");
+			st.setInt(2, 6);
 //não precisa de aspas se for numeros
 //caso precise de data ==> 
 //st.setDate(posicaoColuna, new java.sql.Date(sdf.parse("dd/mm/aaaa").getTime()));

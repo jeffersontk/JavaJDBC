@@ -1,4 +1,4 @@
-package app;
+package crud;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
