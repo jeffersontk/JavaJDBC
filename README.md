@@ -15,3 +15,11 @@ inicie um projeto
     > ponha o jar mysql-connector na biblioteca 
 
 O projeto é feito para ser o mais desencpsulado possível para uma manuntenção saudável 
+
+vale lembrar o uso das ``, na manipulação dos dados
+
+exemplo
+
+DELETE FROM `cblol`.`times` WHERE (`idtimes` = '5');
+
+sem isso da erro, então presta atenção ao seu código SQL
