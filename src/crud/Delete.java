@@ -19,12 +19,13 @@ public class Delete {
 				
 				//prepara para deletar um dado ja existente
 				st = conn.prepareStatement(
-						"DELETE FROM `times`"+
+						"DELETE FROM `aluno`"+
 						"WHERE"+
-						"`idtimes` = ?"
+						"`idaluno` = ?"
 						);
 				//valores para alteracao ==> logica primeira interrogacao, numero 1
-				st.setInt(1, 5);
+				//nesse numero 4 por uma variavel para puxar no main principal 
+				st.setInt(1, 4);
 				
 				int rowsAffected = st.executeUpdate();
 				

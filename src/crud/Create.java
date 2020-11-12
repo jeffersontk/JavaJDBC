@@ -19,16 +19,18 @@ public class Create {
 // inserir cod sql aqui na tabela desejada
 // lembrando dos nomes das colunas
 		 st = conn.prepareStatement(
-				 "INSERT INTO times" +
-				 "(nome, posicao)" +
+				 "INSERT INTO aluno" +
+				 "(alunoNome, alunoCurso, alunoAvaliacao, alunoMatricula)" +
 				 
 				 "VALUES " +
-				 "(?,?)"
+				 "(?,?,?,?)"
 				 );
 //a virgula é o que será substituido por informações
 //logo esse é um codigo generico para a minha tabala só com duas colunas.
 		 	st.setString(1, "unisuam");
-			st.setInt(2, 6);
+			st.setString(2, "CC");
+			st.setString(3, "aprovado");
+			st.setInt(4, 2015645123);
 //não precisa de aspas se for numeros
 //caso precise de data ==> 
 //st.setDate(posicaoColuna, new java.sql.Date(sdf.parse("dd/mm/aaaa").getTime()));

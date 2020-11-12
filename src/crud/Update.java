@@ -18,14 +18,20 @@ public class Update {
 			
 			//prepara para alterar um dado ja existente
 			st = conn.prepareStatement(
-					"UPDATE `times`"+
-					"SET `nome` = ?, "+
-					"`posicao` = ? "+
-					"WHERE (`idtimes` = '4');"
+					"UPDATE `mydb`.`aluno`"+ 
+					"SET `alunoNome` = ?,"+
+					"`alunoCurso` = ?,"+
+					"`alunoAvaliacao` = ?,"+
+					"`alunoMatricula` = ?"+ 
+					" WHERE "+
+					"(`idaluno` = ?)"
 					);
 			//valores para alteracao ==> logica primeira interrogacao, numero 1
 			st.setString(1, "chocolate");
-			st.setInt(2, 5);
+			st.setString(2, "docinho");
+			st.setString(3, "reprovado");
+			st.setInt(4, 2016333555);
+			st.setInt(5, 3);
 			
 			int rowsAffected = st.executeUpdate();
 			

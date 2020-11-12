@@ -21,15 +21,17 @@ public class Reader {
 			//chama a conexao para o st
 			st = conn.createStatement();
 			// aqui poem o sql - nome da tabela
-			rs = st.executeQuery("select * from times");
+			rs = st.executeQuery("select * from aluno");
 			
 			// percorrer o vetor no banco
 			while(rs.next()) {
 				System.out.println(
 						//para apresentar os dados do banco de acordo com o nome e tipo da coluna
-						rs.getInt("idtimes") + " | "+
-						rs.getString("nome") + " | "+
-						rs.getInt("posicao")
+						rs.getInt("idaluno") + " | "+
+						rs.getString("alunoNome") + " | "+
+						rs.getString("alunoCurso")+ " | "+
+						rs.getString("alunoAvaliacao")+ " | "+
+						rs.getInt("alunoMatricula")
 						);
 			}
 		}catch (SQLException e) {
